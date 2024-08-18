@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Muller';
+    src: url(/fonts/MullerRegular.ttf);
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-weight: 700;
+    src: url(/fonts/MullerBold.ttf);
+}
+
+@font-face {
+    font-family: 'Soloist';
+    src: url(/fonts/Soloist.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muller';
+    font-size: 1.25rem;
+    color: rgb(26, 26, 26);
+}
+
+body {
+    background-color: #fafafa;
+    padding: 8px 0px 24px 0px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 128px 0px;
+    gap: 96px;
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    min-height: 100vh;
+    z-index: 10;
+}
+
+#scene {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.1;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.main-title {
+    max-width: 720px;
+    font-family: 'Soloist';
+    font-weight: 700;
+    font-size: 1.85rem;
+    text-align: center;
+}
+
+.main-banner {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-description {
+    max-width: 780px;
+    text-wrap: balance;
+    text-align: center;
+}
+
+.main-price-pull-mark {
+    font-family: 'Soloist';
+    color: rgb(0, 0, 255);
+}
+
+
+.organizers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.organizers-title {
+    font-family: 'Soloist';
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.organizers-description {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.organizers-box {
+    display: flex;
+    width: 800px;
+    gap: 16px;
+}
+
+
+.organizer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    width: 100%;
+    background-color: rgba(210, 210, 210, 0.3);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.organizer-box:hover {
+    background-color: rgba(210, 210, 210, 0.5);
+}
+
+.organizer-box:active {
+    background-color: rgba(210, 210, 210, 0.6);
+}
+
+
+.organizer-box img {
+    max-width: 220px;
+    max-height: 220px;
+}
+
+
+.pull-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.pull-title {
+    font-family: 'Soloist';
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.pull-box {
+    display: flex;
+    gap: 16px;
+}
+
+.pull-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 48px;
+    gap: 16px;
+    text-wrap: balance;
+    text-align: center;
+    background-color: rgba(210, 210, 210, 0.3);
+    border-radius: 8px;
+    max-width: 50%;
+}
+
+.pull-spots-box {
+    padding: 32px 0px 0px 0px;
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+    height: 100%;
+}
+
+.pull-spot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    font-family: 'Soloist';
+    color: #fafafa;
+    font-size: 4rem;
+}
+
+.pull-spot-1 {
+    height: 180px;
+    background-color: rgb(255, 215, 0);
+}
+
+.pull-spot-1::before {
+    content: "100.000";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    top: -28px;
+    left: 18%;
+}
+
+.pull-spot-2 {
+    background-color: rgb(192, 192, 192);
+    height: 130px;
+}
+
+.pull-spot-2::before {
+    content: "50.000";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    top: -28px;
+    left: 23%;
+}
+
+.pull-spot-3 {
+    height: 90px;
+    background-color: rgba(205, 127, 50);
+}
+
+.pull-spot-3::before {
+    content: "20.000";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    top: -28px;
+    left: 23%
+}
+
+.registration {
+    margin: 16px 0px 0px 0px;
+    padding: 16px 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgb(0, 0, 255);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+
+.tg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 32px 64px;
+    gap: 16px;
+    max-width: 640px;
+    border-radius: 8px;
+    background-color: rgba(77, 77, 77, 0.4);
+}
+
+.tg-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fafafa;
+}
+
+.tg-button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #fafafa;
+    margin: 16px 0px 0px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.tg-button:hover {
+    background: rgb(224, 224, 224);
+}
+
+.tg-button:active {
+    background: rgb(200, 200, 200);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    gap: 24px;
+    width: 700px;
+    justify-content: space-between;
+
+}
+
+.footer-quest {
+    font-size: 1rem;
+}
+
+.footer-quest a {
+    font-size: 1rem;
+    color: rgb(0, 0, 255);
+}
+
+.footer-polreg {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-polreg a {
+    font-size: 1rem;
+    color: rgb(0, 0, 255);
+}
+
+.footer-copyright {
+    padding-top: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: rgba(77, 77, 77) 1px solid;
+}
