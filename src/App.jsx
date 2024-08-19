@@ -32,13 +32,13 @@ export const App = () => {
                 <div className="container">
                     <h3 className="base-title">Организаторы</h3>
                     <div className="organizers-box">
-                        <a className="organizer-box" href="https://www.tyuiu.ru/">
+                        <a className="organizer-box" href="https://www.tyuiu.ru/" target="_blank">
                             <img src="image/logo_tiu.png" alt="" />
                         </a>
-                        <a className="organizer-box" href="https://www.metabuildum.ru/">
+                        <a className="organizer-box" href="https://www.metabuildum.ru/" target="_blank">
                             <img src="image/logo_mb.png" alt="" />
                         </a>
-                        <a className="organizer-box" href="https://www.minstroyrf.gov.ru/">
+                        <a className="organizer-box" href="https://www.minstroyrf.gov.ru/" target="_blank">
                             <img src="image/logo_minstroy.svg" alt="" />
                         </a>
                     </div>
@@ -59,7 +59,7 @@ export const App = () => {
                             <div className="pull-spot pull-spot-2">2</div>
                         </div>
                     </div>
-                    <a className="base-button" href="">
+                    <a className="base-button" href="" target="_blank">
                         Точно хочу участвовать!
                     </a>
                 </div>
@@ -68,7 +68,7 @@ export const App = () => {
                     <div className="container tg">
                         <h3 className="small-title-white">Хочешь следить за нашими новостями?</h3>
                         <h3 className="small-title-white">@KaskadIT</h3>
-                        <a className="small-button-white" href="https://t.me/KaskadIT">Присоединиться</a>
+                        <a className="small-button-white" href="https://t.me/KaskadIT" target="_blank">Присоединиться</a>
                     </div>
                 </div>
             </main>
@@ -76,11 +76,11 @@ export const App = () => {
             <footer className="footer">
                 <div className="footer-info">
                     <div className="footer-quest">
-                        Задать вопрос: <a href="mailto:info@championship.ru">info@championship.ru</a>
+                        Задать вопрос: <a href="mailto:info@championship.ru" target="_blank">info@championship.ru</a>
                     </div>
                     <div className="footer-polreg">
-                        <a href="">Положение</a>
-                        <a href="">Регламент</a>
+                        <a href="" target="_blank">Положение</a>
+                        <a href="" target="_blank">Регламент</a>
                     </div>
                 </div>
                 <div className="footer-copyright">
