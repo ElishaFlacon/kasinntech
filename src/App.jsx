@@ -18,74 +18,55 @@ export const App = () => {
                 />
             </div>
 
-            <main className="content">
-                <div className="container">
-                    <h1 className="large-title">Всероссийский студенческий строительный чемпионат</h1>
-                    <div className="banner">
-                        <img src="image/banner.svg" alt="" />
+            <header className="header">
+                <div className="header-container max-app-width">
+                    <div className="header-left">
+                        <a href="https://www.tyuiu.ru/" target="_blank">Этапы</a>
+                        <a href="https://www.tyuiu.ru/" target="_blank">Положение</a>
+                        <a href="https://www.tyuiu.ru/" target="_blank">Регламент</a>
                     </div>
-                    <h2 className="main-description">
-                        Каскад Инновационных Технологий — это всероссийский студенческий строительный чемпионат с призовым фондом в <span className="price-pull-mark">1.020.000 рублей</span>, направленный на развитие навыков будущих специалистов в условиях цифровизации и внедрения инновационных технологий в строительную отрасль.
-                    </h2>
-                </div>
-
-                <div className="container">
-                    <h3 className="base-title">Организаторы</h3>
-                    <div className="organizers-box">
-                        <a className="organizer-box" href="https://www.tyuiu.ru/" target="_blank">
-                            <img src="image/logo_tiu.png" alt="" />
-                        </a>
-                        <a className="organizer-box" href="https://www.metabuildum.ru/" target="_blank">
-                            <img src="image/logo_mb.png" alt="" />
-                        </a>
-                        <a className="organizer-box" href="https://www.minstroyrf.gov.ru/" target="_blank">
-                            <img src="image/logo_minstroy.svg" alt="" />
-                        </a>
+                    <div className="header-right">
+                        <a href="https://www.tyuiu.ru/" target="_blank">Регистрация</a>
                     </div>
-                    <h4 className="organizers-description">Чемпионат организован ФГБОУ ВО ТИУ и ООО «Метабилдум» при поддержке Минстроя РФ.</h4>
                 </div>
+            </header>
 
-                <div className="container">
-                    <h3 className="base-title">Призовой фонд</h3>
-                    <div className="pull-box">
-                        <div className="pull-description">
-                            <h4 className="price-pull-mark">1.020.000 рублей</h4>
-                            Призовой фонд будет распределен между 3 призерами в каждой номинации. Всего будет 5 номинаций и 50 участников (10 команд).
+            <main className="content max-app-width">
+                <div className="top-content">
+                    <div className="main-logo">
+                        <img src="image/logo.svg" alt="" />
+                        <h1 className="logo-text">
+                            Всероссийский студенческий строительный чемпионат
+                        </h1>
+                    </div>
+                    <div className="main-description">
+                        <p>
+                            Каскад Инновационных Технологий*
+                        </p>
+                        <p>
+                            Направлен на развитие навыков будущих специалистов в условиях цифровизации и внедрения инновационных технологий в строительную отрасль.
+                        </p>
+                    </div>
+
+                    <div className="orgs">
+                        <h2 className="orgs-title">Организаторы</h2>
+                        <div className="orgs-list">
+                            <div className="orgs-item">
+                                <img src="image/orgs/1.svg" alt="" />
+                            </div>
+                            <div className="orgs-item">
+                                <img src="image/orgs/1.svg" alt="" />
+                            </div>
+                            <div className="orgs-item">
+                                <img src="image/orgs/1.svg" alt="" />
+                            </div>
                         </div>
-
-                        <div className="pull-spots-box">
-                            <div className="pull-spot pull-spot-3">3</div>
-                            <div className="pull-spot pull-spot-1">1</div>
-                            <div className="pull-spot pull-spot-2">2</div>
-                        </div>
-                    </div>
-                    <a className="base-button" href="" target="_blank">
-                        Точно хочу участвовать!
-                    </a>
-                </div>
-
-                <div className="container">
-                    <div className="container tg">
-                        <h3 className="small-title-white">Хочешь следить за нашими новостями?</h3>
-                        <h3 className="small-title-white">@KaskadIT</h3>
-                        <a className="small-button-white" href="https://t.me/KaskadIT" target="_blank">Присоединиться</a>
                     </div>
                 </div>
             </main>
 
             <footer className="footer">
-                <div className="footer-info">
-                    <div className="footer-quest">
-                        Задать вопрос: <a href="mailto:info@championship.ru" target="_blank">info@championship.ru</a>
-                    </div>
-                    <div className="footer-polreg">
-                        <a href="" target="_blank">Положение</a>
-                        <a href="" target="_blank">Регламент</a>
-                    </div>
-                </div>
-                <div className="footer-copyright">
-                    © 2024 Каскад Инновационных Технологий. Все права защищены.
-                </div>
+
             </footer>
         </>
     )

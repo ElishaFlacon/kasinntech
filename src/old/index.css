@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'Muller';
+    src: url(/fonts/MullerRegular.ttf);
+}
+
+@font-face {
+    font-family: 'Muller';
+    font-weight: 700;
+    src: url(/fonts/MullerBold.ttf);
+}
+
+@font-face {
+    font-family: 'Soloist';
+    src: url(/fonts/Soloist.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muller';
+    font-size: 1.25rem;
+    color: rgb(26, 26, 26);
+}
+
+body {
+    background-color: #fafafa;
+    padding: 8px 0px 24px 0px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 128px 0px;
+    gap: 96px;
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    min-height: 100vh;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#scene {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 32px;
+}
+
+.large-title {
+    text-align: center;
+    max-width: 720px;
+    font-family: 'Soloist';
+    font-weight: 700;
+    font-size: 1.85rem;
+}
+
+.base-title {
+    text-align: center;
+    font-family: 'Soloist';
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.small-title-white {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fafafa;
+}
+
+.base-button {
+    margin: 16px 0px 0px 0px;
+    padding: 16px 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgb(0, 0, 255);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.base-button:hover {
+    background-color: rgb(8, 8, 255);
+}
+
+.base-button:active {
+    background-color: rgb(12, 12, 255);
+}
+
+.small-button-white {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #fafafa;
+    margin: 16px 0px 0px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.small-button-white:hover {
+    background: rgb(224, 224, 224);
+}
+
+.small-button-white:active {
+    background: rgb(200, 200, 200);
+}
+
+.price-pull-mark {
+    font-family: 'Soloist';
+    color: rgb(0, 0, 255);
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-description {
+    max-width: 780px;
+    text-wrap: balance;
+    text-align: center;
+}
+
+.organizers-description {
+    font-size: 1rem;
+    font-weight: 600;
+    text-wrap: balance;
+    text-align: center;
+}
+
+.organizers-box {
+    display: flex;
+    width: 800px;
+
+    gap: 16px;
+}
+
+.organizer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    width: 100%;
+    height: 180px;
+    background-color: rgba(210, 210, 210, 0.3);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.organizer-box:hover {
+    background-color: rgba(210, 210, 210, 0.5);
+}
+
+.organizer-box:active {
+    background-color: rgba(210, 210, 210, 0.6);
+}
+
+.organizer-box img {
+    max-width: 220px;
+    max-height: 220px;
+}
+
+.pull-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.pull-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 48px;
+    gap: 16px;
+    max-width: 50%;
+    text-wrap: balance;
+    background-color: rgba(210, 210, 210, 0.3);
+    border-radius: 8px;
+}
+
+.pull-spots-box {
+    display: flex;
+    align-items: flex-end;
+    padding: 32px 0px 0px 0px;
+    width: 40%;
+    height: 100%;
+}
+
+.pull-spot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    font-family: 'Soloist';
+    font-size: 4rem;
+    color: #fafafa;
+}
+
+.pull-spot-1 {
+    height: 180px;
+    background-color: rgb(255, 215, 0);
+}
+
+.pull-spot-1::before {
+    content: "100.000";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    top: -28px;
+    left: 18%;
+}
+
+.pull-spot-2 {
+    background-color: rgb(192, 192, 192);
+    height: 130px;
+}
+
+.pull-spot-2::before {
+    content: "50.000";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    top: -28px;
+    left: 23%;
+}
+
+.pull-spot-3 {
+    height: 90px;
+    background-color: rgba(205, 127, 50);
+}
+
+.pull-spot-3::before {
+    content: "20.000";
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+    top: -28px;
+    left: 23%
+}
+
+.tg {
+    margin: auto;
+    padding: 32px 64px;
+    gap: 16px;
+    max-width: 640px;
+    background-color: rgba(77, 77, 77, 0.4);
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 16px;
+    gap: 8px;
+    max-width: 700px;
+
+}
+
+.footer-quest {
+    font-size: 1rem;
+}
+
+.footer-quest a {
+    font-size: 1rem;
+    color: rgb(0, 0, 255);
+}
+
+.footer-polreg {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-polreg a {
+    font-size: 1rem;
+    color: rgb(0, 0, 255);
+}
+
+.footer-copyright {
+    padding: 16px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: rgba(77, 77, 77) 1px solid;
+}
+
+@media screen and (max-width: 800px) {
+    .background {
+        margin: 0px 0px 0px -30%;
+    }
+
+    .content {
+        padding: 64px 0px 128px 0px;
+    }
+
+    .organizers-box {
+        flex-wrap: wrap;
+        width: fit-content;
+        height: 100%;
+    }
+
+    .pull-box {
+        flex-wrap: wrap;
+    }
+
+    .pull-description {
+        max-width: 100%;
+    }
+
+    .pull-spots-box {
+        width: 100%;
+    }
+
+    .large-title {
+        font-size: 1.5rem;
+    }
+
+    .base-title {
+        font-size: 1.25rem;
+    }
+
+    .small-title-white {
+        font-size: 1.25rem;
+    }
+
+    .base-button {
+        font-size: 1rem;
+    }
+
+    .small-button-white {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .background {
+        margin: 0px 0px 0px -80%;
+    }
+}
