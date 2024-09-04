@@ -63,6 +63,72 @@ export const App = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="prize-content">
+                    <div className="prize-title">
+                        <h2>Призовой фонд</h2>
+                        <h2>1 020 000 РУБ</h2>
+                    </div>
+                    <div className="prize-distribution">
+                        <div className="prize-column">
+                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
+                        </div>
+                        <div className="prize-column">
+                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
+                        </div>
+                        <div className="prize-column">
+                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
+                        </div>
+                    </div>
+                    <div className="prize-description">
+                        <div className="prize-description-top">
+                            <p className="prize-description-top-item">60 участников</p>
+                            <p className="prize-description-top-item">30 команд</p>
+                            <p className="prize-description-top-item">6 направлений</p>
+                            <p className="prize-description-top-item">18 призёров</p>
+                        </div>
+                        <div className="prize-description-bot">
+                            <p className="prize-description-bot-item">
+                                Призовой фонд будет распределен между 3 призерами в каждой номинации
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="cases-content">
+                    <h2 className="cases-title">Направления кейсов</h2>
+                    <div className="cases-list">
+                        <div className="cases-item">
+                            <img src="image/cases/1.svg" alt="" />
+                        </div>
+                        <div className="cases-item">
+                            <img src="image/cases/1.svg" alt="" />
+                        </div>
+                        <div className="cases-item">
+                            <img src="image/cases/1.svg" alt="" />
+                        </div>
+                        <div className="cases-item">
+                            <img src="image/cases/1.svg" alt="" />
+                        </div>
+                        <div className="cases-item">
+                            <img src="image/cases/1.svg" alt="" />
+                        </div>
+                        <div className="cases-item">
+                            <img src="image/cases/1.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
             </main>
 
             <footer className="footer">
