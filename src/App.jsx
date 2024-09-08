@@ -18,6 +18,8 @@ export const App = () => {
                 />
             </div>
 
+            <div className="top-background" />
+
             <header className="header">
                 <div className="header-container max-app-width">
                     <div className="header-left">
@@ -31,13 +33,10 @@ export const App = () => {
                 </div>
             </header>
 
-            <main className="content max-app-width">
-                <div className="top-content">
-                    <div className="main-logo">
-                        <img src="image/logo.svg" alt="" />
-                        <h1 className="logo-text">
-                            Всероссийский студенческий строительный чемпионат
-                        </h1>
+            <main className="content">
+                <div className="top-content max-app-width">
+                    <div className="main-banner">
+                        <img src="image/banner.svg" alt="" />
                     </div>
                     <div className="main-description">
                         <p>
@@ -47,27 +46,50 @@ export const App = () => {
                             Направлен на развитие навыков будущих специалистов в условиях цифровизации и внедрения инновационных технологий в строительную отрасль.
                         </p>
                     </div>
+                </div>
 
+                <div className="krutie">
                     <div className="orgs">
                         <h2 className="orgs-title">Организаторы</h2>
                         <div className="orgs-list">
                             <div className="orgs-item">
-                                <img src="image/orgs/1.svg" alt="" />
+                                <img src="image/org-1.png" alt="" />
                             </div>
                             <div className="orgs-item">
-                                <img src="image/orgs/1.svg" alt="" />
+                                <img src="image/org-2.svg" alt="" />
                             </div>
                             <div className="orgs-item">
-                                <img src="image/orgs/1.svg" alt="" />
+                                <img src="image/org-3.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="orgs">
+                        <h2 className="orgs-title">Партнеры</h2>
+                        <div className="orgs-list">
+                            <div className="orgs-item">
+                                <img src="image/partner-1.png" alt="" />
+                            </div>
+                            <div className="orgs-item">
+                                <img src="image/partner-2.png" alt="" />
+                            </div>
+                            <div className="orgs-item">
+                                <img src="image/partner-3.png" alt="" />
+                            </div>
+                            <div className="orgs-item">
+                                <img src="image/partner-4.png" alt="" />
+                            </div>
+                            <div className="orgs-item">
+                                <img src="image/partner-5.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="prize-content">
-                    <div className="prize-title">
-                        <h2>Призовой фонд</h2>
-                        <h2>1 020 000 РУБ</h2>
+                <div className="prize-content max-app-width">
+                    <div className="prize-title-container">
+                        <h2 className="prize-title">Призовой фонд</h2>
+                        <h2 className="prize-amount">1 020 000 РУБ</h2>
                     </div>
                     <div className="prize-distribution">
                         <div className="prize-column">
@@ -93,10 +115,18 @@ export const App = () => {
                     </div>
                     <div className="prize-description">
                         <div className="prize-description-top">
-                            <p className="prize-description-top-item">60 участников</p>
-                            <p className="prize-description-top-item">30 команд</p>
-                            <p className="prize-description-top-item">6 направлений</p>
-                            <p className="prize-description-top-item">18 призёров</p>
+                            <p className="prize-description-top-item">
+                                <span className="prize-description-top-item-blue">60</span> участников
+                            </p>
+                            <p className="prize-description-top-item">
+                                <span className="prize-description-top-item-blue">30</span> команд
+                            </p>
+                            <p className="prize-description-top-item">
+                                <span className="prize-description-top-item-blue">6</span> направлений
+                            </p>
+                            <p className="prize-description-top-item">
+                                <span className="prize-description-top-item-blue">18</span> призёров
+                            </p>
                         </div>
                         <div className="prize-description-bot">
                             <p className="prize-description-bot-item">
@@ -106,7 +136,7 @@ export const App = () => {
                     </div>
                 </div>
 
-                <div className="cases-content">
+                <div className="cases-content max-app-width">
                     <h2 className="cases-title">Направления кейсов</h2>
                     <div className="cases-list">
                         <div className="cases-item">

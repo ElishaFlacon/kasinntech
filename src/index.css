@@ -1,17 +1,39 @@
 @font-face {
+    font-family: 'Micra';
+    src: url('/fonts/Micra-Bold.eot');
+    src: local('/fonts/Micra Bold'), local('/fonts/Micra-Bold'),
+        url('/fonts/Micra-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Micra-Bold.woff') format('woff'),
+        url('/fonts/Micra-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Micra';
+    src: url('/fonts/Micra.eot');
+    src: local('/fonts/Micra'),
+        url('/fonts/Micra.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Micra.woff') format('woff'),
+        url('/fonts/Micra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Muller';
-    src: url(/fonts/MullerRegular.ttf);
+    src: url('/fonts/MullerRegular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Muller';
     font-weight: 700;
-    src: url(/fonts/MullerBold.ttf);
+    src: url('/fonts/MullerBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Soloist';
-    src: url(/fonts/Soloist.ttf);
+    src: url('/fonts/Soloist.ttf') format('truetype');
 }
 
 * {
@@ -19,12 +41,13 @@
     padding: 0;
     font-family: 'Muller';
     font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
     color: rgb(26, 26, 26);
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #FFFFFF;
     padding: 0px;
 }
 
@@ -43,9 +66,12 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    padding: 128px 0px;
-    gap: 96px;
+    padding: 96px 0px;
+    width: 100%;
+    height: 100%;
+    gap: 64px;
     min-height: 100vh;
     z-index: 10;
     overflow: hidden;
@@ -57,6 +83,7 @@ body {
     width: 100%;
     min-height: 100%;
     overflow: hidden;
+    z-index: 2;
 }
 
 .background {
@@ -65,6 +92,15 @@ body {
     min-width: 100%;
     min-height: 100%;
     opacity: 0.1;
+}
+
+.top-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to bottom, #0000FF, #FFFFFF);
+    z-index: 1;
 }
 
 .header {
@@ -93,13 +129,113 @@ body {
     gap: 64px;
 }
 
-.header-right {}
-
-.header-container a {
-    /* transition: all 0.15s ease; */
+.header-container a:hover {
+    font-weight: 700;
 }
 
-.header-container a:hover {
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.main-description p {
+    font-size: 0.85rem;
+    color: #FFFFFF;
+}
+
+.krutie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.orgs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.orgs-title {
+    padding: 8px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Micra';
+    color: #959595;
+    background: #FFFFFF;
+}
+
+.orgs-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 0px;
+    gap: 16px;
+    width: 100%;
+    background: #fbfbff;
+}
+
+.orgs-item {
+    max-width: 200px;
+}
+
+.orgs-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 70px;
+}
+
+.prize-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.prize-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 120px 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.prize-title {
+    font-family: 'Micra';
+    color: #333333;
+    font-size: 3.5rem;
+}
+
+.prize-amount {
+    font-family: 'Micra';
+    color: #0000FF;
+    font-size: 5rem;
     font-weight: 700;
 }
 
@@ -125,17 +261,18 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
+    font-size: 1rem;
+    font-family: 'Micra';
+    color: #333333;
 }
 
 .prize-bar::before {
     content: attr(data-amount);
     position: absolute;
-    top: -3rem;
+    top: -4rem;
     white-space: nowrap;
     transform: rotate(-90deg);
+
 }
 
 .prize-bar-100k {
@@ -151,4 +288,53 @@ body {
 .prize-bar-20k {
     height: 60px;
     background-color: #D9D9D9;
+}
+
+.prize-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.prize-description-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.prize-description-top-item-blue {
+    color: #0000FF;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.prize-description-top-item {
+    font-size: 1.5rem;
+    color: #1A1A1A;
+}
+
+.prize-description-bot-item {
+    font-size: 1.15rem;
+    color: #1A1A1A;
+}
+
+.cases-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.cases-title {
+    font-family: 'Micra';
+    color: #333333;
+    font-size: 3.5rem;
 }
