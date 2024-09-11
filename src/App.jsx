@@ -45,12 +45,12 @@ export const App = () => {
             <header className="header">
                 <div className="header-container max-app-width">
                     <div className="header-left">
-                        <a href="https://www.tyuiu.ru/" target="_blank">Этапы</a>
-                        <a href="https://www.tyuiu.ru/" target="_blank">Положение</a>
-                        <a href="https://www.tyuiu.ru/" target="_blank">Регламент</a>
+                        <a href="#reg" target="_blank">Этапы</a>
+                        <a href="#reg" target="_blank">Положение</a>
+                        <a href="#reg" target="_blank">Регламент</a>
                     </div>
                     <div className="header-right">
-                        <a href="https://www.tyuiu.ru/" target="_blank">Регистрация</a>
+                        <a href="#reg" target="_blank">Регистрация</a>
                     </div>
                 </div>
             </header>
@@ -215,13 +215,13 @@ export const App = () => {
                     </div>
                 </div>
 
-                <div className="reg-block">
+                <div className="reg-block" id="reg">
                     <div className="reg-block-top">
                         <a className="reg-block-top-btn" href="https://www.tyuiu.ru/" target="_blank">Положение</a>
                         <a className="reg-block-top-btn" href="https://www.tyuiu.ru/" target="_blank">Регламент</a>
                     </div>
-                    <a className="reg-block-register" href="https://t.me/kaskad_it_channel" target="_blank">Регистрация</a>
-                    <a className="reg-block-telegram" href="https://t.me/kaskad_it_channel" target="_blank">Telegram-Канал</a>
+                    <a className="reg-block-register" href="https://forms.yandex.ru/u/66bb0e7ac417f33c62714c21/" target="_blank">Регистрация</a>
+                    <a className="reg-block-telegram" href="https://t.me/KasInnTeh/" target="_blank">Telegram-Канал</a>
                     <div className="reg-block-bot">
                         <p>По всем вопросам:</p>
                         <a href="mailto:info@касиннтех.рф">info@касиннтех.рф</a>
