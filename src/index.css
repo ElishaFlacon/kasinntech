@@ -478,6 +478,7 @@ a:hover {
     width: 100%;
     max-width: 600px;
     gap: 16px;
+    padding: 0px 16px;
     text-transform: uppercase;
 }
 
@@ -548,4 +549,171 @@ a:hover {
 .footer p {
     color: #FFFFFF;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.hidden {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        gap: 48px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .prize-bar {
+        width: 80px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .content {
+        padding: 64px 0px 128px 0px;
+    }
+
+    .orgs-list {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .prize-title {
+        font-size: 2rem;
+    }
+
+    .prize-amount {
+        font-size: 2.25rem;
+    }
+
+    .prize-description-top {
+        gap: 8px;
+    }
+
+    .prize-description-top-item {
+        font-size: 1rem;
+    }
+
+    .prize-description-bot-item {
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .steps-list {
+        gap: 8px;
+    }
+
+    .step-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-number {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .prize-title,
+    .cases-title,
+    .steps-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .step-info,
+    .step-info-1 {
+        padding: 16px 0px 0px 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+
+    .step-info p,
+    .step-info-1 p {
+        text-align: center;
+    }
+
+    .reg-block-top {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .reg-block-top-btn {
+        width: 100%;
+    }
+
+    .reg-block-bot p,
+    .reg-block-bot a {
+        font-size: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .background {
+        margin: 0px 0px 0px -80%;
+    }
+
+    .content {
+        padding: 32px 0px 64px 0px;
+    }
+
+    .main-description p {
+        font-size: 0.65rem;
+    }
+
+    .prize-title,
+    .cases-title,
+    .steps-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .prize-description-top {
+        padding: 0px 0px 0px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .prize-amount {
+        font-size: 1.65rem;
+    }
+
+    .step-number {
+        font-size: 1.5rem;
+        padding: 16px;
+    }
+
+    .step-number span {
+        font-size: 1.25rem;
+    }
+
+    .step-dates,
+    .step-description,
+    .step-result {
+        font-size: 0.875rem;
+    }
+
+    .reg-block-register {
+        font-size: 1.25rem;
+    }
+
+    .reg-block-telegram {
+        font-size: 0.875rem;
+    }
+
+    .footer p {
+        font-size: 0.875rem;
+    }
 }

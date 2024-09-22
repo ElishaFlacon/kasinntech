@@ -45,12 +45,32 @@ export const App = () => {
             <header className="header">
                 <div className="header-container max-app-width">
                     <div className="header-left">
-                        <a href="#reg" target="_blank">Этапы</a>
-                        <a href="#reg" target="_blank">Положение</a>
-                        <a href="#reg" target="_blank">Регламент</a>
+                        <a href="#steps" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('steps').scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }}>Этапы</a>
+                        <a href="#reg" target="_blank" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('reg').scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }}>Положение</a>
+                        <a href="reg" target="_blank" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('reg').scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }}>Регламент</a>
                     </div>
                     <div className="header-right">
-                        <a href="#reg" target="_blank">Регистрация</a>
+                        <a href="reg" target="_blank" onClick={() => {
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                        }}>Регистрация</a>
                     </div>
                 </div>
             </header>
@@ -108,7 +128,7 @@ export const App = () => {
                     </div>
                 </div>
 
-                <div className="prize-content max-app-width">
+                <div className="prize-content max-app-width" id="prize">
                     <div className="prize-title-container">
                         <h2 className="prize-title">Призовой фонд</h2>
                         <h2 className="prize-amount">1 020 000 РУБ</h2>
@@ -116,23 +136,24 @@ export const App = () => {
                     <div className="prize-distribution">
                         <div className="prize-column">
                             <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
-                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
-                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
-                            <div className="prize-bar prize-bar-20k" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k hidden" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k hidden" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k hidden" data-amount="20 000"></div>
+                            <div className="prize-bar prize-bar-20k hidden" data-amount="20 000"></div>
                         </div>
                         <div className="prize-column">
                             <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
-                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
-                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
-                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
-                            <div className="prize-bar prize-bar-100k" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k hidden" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k hidden" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k hidden" data-amount="100 000"></div>
+                            <div className="prize-bar prize-bar-100k hidden" data-amount="100 000"></div>
                         </div>
                         <div className="prize-column">
                             <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
-                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
-                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
-                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
-                            <div className="prize-bar prize-bar-50k" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k hidden" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k hidden" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k hidden" data-amount="50 000"></div>
+                            <div className="prize-bar prize-bar-50k hidden" data-amount="50 000"></div>
                         </div>
                     </div>
                     <div className="prize-description">
@@ -158,7 +179,7 @@ export const App = () => {
                     </div>
                 </div>
 
-                <div className="cases-content max-app-width">
+                <div className="cases-content max-app-width" id="cases">
                     <h2 className="cases-title">Направления кейсов</h2>
                     <div className="cases-list">
                         <div className="cases-item">
@@ -182,7 +203,7 @@ export const App = () => {
                     </div>
                 </div>
 
-                <div class="steps-content max-app-width">
+                <div class="steps-content max-app-width" id="steps">
                     <h2 class="steps-title">Этапы Проведения</h2>
                     <div class="steps-list">
                         <div class="step-item">
