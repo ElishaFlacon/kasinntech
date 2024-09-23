@@ -106,7 +106,7 @@ export const App = () => {
                         </div>
                     </div>
 
-                    <div className="orgs">
+                    {/* <div className="orgs">
                         <h2 className="orgs-title">Партнеры</h2>
                         <div className="orgs-list">
                             <div className="orgs-item">
@@ -125,7 +125,7 @@ export const App = () => {
                                 <img src="image/partner-5.png" alt="" />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="prize-content max-app-width" id="prize">
@@ -220,7 +220,7 @@ export const App = () => {
                             </div>
                         </div>
                         <div class="step-item">
-                            <p class="step-number">2 <span>г. МОСКВА</span></p>
+                            <p class="step-number">2 <span>Заочный</span></p>
                             <div class="step-info">
                                 <p class="step-dates">14 октября - 16 октября</p>
                                 <p class="step-description">Образовательная программа</p>
@@ -238,7 +238,7 @@ export const App = () => {
 
                 <div className="reg-block" id="reg">
                     <div className="reg-block-top">
-                        <a className="reg-block-top-btn" href="https://www.tyuiu.ru/" target="_blank">Положение</a>
+                        <a className="reg-block-top-btn" href="/ЗУВР-104.2024.pdf" target="_blank">Положение</a>
                         <a className="reg-block-top-btn" href="https://www.tyuiu.ru/" target="_blank">Регламент</a>
                     </div>
                     <a className="reg-block-register" href="https://forms.yandex.ru/u/66bb0e7ac417f33c62714c21/" target="_blank">Регистрация</a>
