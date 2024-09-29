@@ -555,7 +555,7 @@ a:hover {
 }
 
 .hidden {
-    display: block;
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
